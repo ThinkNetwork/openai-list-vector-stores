@@ -1,9 +1,8 @@
-
 [
   {
     "kind": "column",
-    "name": "OpenAI (Assistants)",
-    "description": "Create, modify and run OpenAI Assistants.",
+    "name": "List OpenAI Vector Stores",
+    "description": "Retrieve all vector stores in OpenAI's API, with optional pagination controls.",
     "author": "Gavin Horne <gavin@thinknetwork.com.au>",
     "params": [
       {
@@ -12,18 +11,23 @@
         "type": "string"
       },
       {
-        "name": "endpoint",
-        "displayName": "API Endpoint (Required)",
+        "name": "limit",
+        "displayName": "Limit (Optional, Number of results)",
+        "type": "number"
+      },
+      {
+        "name": "order",
+        "displayName": "Order (asc/desc, Optional)",
         "type": "string"
       },
       {
-        "name": "body",
-        "displayName": "Body (JSON Schema Required)",
+        "name": "after",
+        "displayName": "After Vector Store ID (Optional, for pagination)",
         "type": "string"
       },
       {
-        "name": "json",
-        "displayName": "JSON Schema (Output)",
+        "name": "before",
+        "displayName": "Before Vector Store ID (Optional, for pagination)",
         "type": "string"
       }
     ],
